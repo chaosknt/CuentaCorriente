@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+	<title>Ejercicio 6 de Javascript</title>
+</head>
+<body>
+    <h1 class="centrado">Mi cuenta corriente</h1>
+    <p class="centrado alert alert-warning">Balance Total:$<span id="balance">0</span></p> 
+
+    
+        <form id="test" class="centrado">
+            <label><input type="radio" name="test" value="1" onchange="detectarTipoOperacion()" checked> Dep&oacutesito</label>
+            <label><input type="radio" name="test" value="2" onchange="detectarTipoOperacion()"> Extracci&oacuten</label>
+            
+           </form>
+    
+
+    <input type="text" id="nuevoValor" placeholder="Ingrese un valor" class="centrado">
+    
+    <button onclick="AgregarFila()" class="btn btn-sm btn-primary centrado">
+        Aceptar
+    </button>
+    
+    <div class="centrado">
+    <table id="tabla" class="table table-striped table-bordered">
+        <thead>
+            <tr>
+                <th>Fecha de movimiento</th>
+                <th>Monto</th>
+                <th>Balance parcial</th>
+            </tr>
+        </thead>
+        <tbody> 
+                            
+    </tbody>
+    </table>        
+                         
+</div>
+ <script src="js/index.js"></script>   
+</body>
+</html>
